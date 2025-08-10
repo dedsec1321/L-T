@@ -1,1 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background: #002855;
+    color: rgb(232, 236, 239);
+    text-align: center;
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.accordion input { display: none; }
+.accordion label {
+    display: block;
+    padding: 10px;
+    background: #004b87;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    background: #e3eaf2;
+    padding: 0 10px;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.accordion input:checked + label + .content {
+    max-height: 200px;
+    padding: 10px;
+}
+
+.table-container { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+thead { background: #004b87; color: white; }
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+tbody tr:hover { background: #e6f2ff; }
+
+
+.compare-btn {
+    display: inline-block;
+    background: #006bb6;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.compare-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #eef5fb;
+    margin-top: 10px;
+    padding: 0 15px;
+    border-radius: 5px;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+#show-compare { display: none; }
+#show-compare:checked ~ .compare-content {
+    max-height: 800px;
+    padding: 15px;
+}
+.compare-grid {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.course-box {
+    flex: 1 1 250px;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.course-box:hover { transform: translateY(-3px); }
+
+
+.icon-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.icon-card {
+    flex: 1 1 150px;
+    background: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+.icon-card:hover { transform: translateY(-5px); }
+.icon-card span {
+    font-size: 2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background: #002855;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
 
