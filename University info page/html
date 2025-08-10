@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>University Department Info Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<title>Christ University</title>
+    <style>
+        .center {
+            text-align: center; 
+            margin-top: 50px;
+        }
 
+        img {
+            display: block; 
+            margin: 0 auto;
+            max-width: 400px; 
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        
+        <img src="https://cis-india.org/Christuniversitylogocolour.jpg/download" alt="Campus Image">
+
+    </div>
+</body>
+
+    <header>
+        <h1>Computer Science Department</h1>
+        <p>Excellence in Technology & Innovation</p>
+    </header>
+
+  
+    <section id="faculty">
+        <h2>Faculty Spotlight</h2>
+        <div class="accordion">
+
+            <input type="checkbox" id="prof1">
+            <label for="prof1">Dr. Ram – IoT Research</label>
+            <div class="content">
+                <p>Specializes in IoT, Security</p>
+            </div>
+
+            <input type="checkbox" id="prof2">
+            <label for="prof2">Dr. Harish – Computer Science</label>
+            <div class="content">
+                <p>Expert in programming, AI, cybersecurity, and data science, dedicated to advancing technology and student success.</p>
+            </div>
+
+            <input type="checkbox" id="prof3">
+            <label for="prof3">Dr. Kumar– AIML</label>
+            <div class="content">
+                <p>Focuses on AIML, Deep Learning.</p>
+            </div>
+
+            <input type="checkbox" id="prof4">
+            <label for="prof4">Prof. Fatima – Information Technology</label>
+            <div class="content">
+                <p>Specializes in network management.</p>
+            </div>
+
+            <input type="checkbox" id="prof5">
+            <label for="prof5">Dr. Muthu Krishnan – Data Science</label>
+            <div class="content">
+                <p>Focuses on machine learning, big data analytics, and predictive modeling.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="courses">
+        <h2>Course Catalog</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Select</th>
+                        <th>Course Code</th>
+                        <th>Title</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><input type="checkbox"></td><td>CS IoT</td><td>Internet of Things</td><td>20</td></tr>
+                    <tr><td><input type="checkbox"></td><td>CSE</td><td>Computer Science</td><td>20</td></tr>
+                    <tr><td><input type="checkbox"></td><td>CS AIML</td><td>Artificial Intelligence and Machine Learning</td><td>18</td></tr>
+                    <tr><td><input type="checkbox"></td><td>CS IT</td><td>Information Technology</td><td>20</td></tr>
+                    <tr><td><input type="checkbox"></td><td>CS DS</td><td>Data Science</td><td>22</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="compare-panel">
+            <input type="checkbox" id="show-compare">
+            <label for="show-compare" class="compare-btn">Show Comparison</label>
+
+            <div class="compare-content">
+                <h3>Course Comparison</h3>
+                <div class="compare-grid">
+                    <div class="course-box"><strong>CS AIML</strong><p>Master Java, Python, and deep learning.</p><p><b>Credits:</b> 20</p></div>
+                    <div class="course-box"><strong>CSE</strong><p>Core CS concepts, programming, and systems.</p><p><b>Credits:</b> 20</p></div>
+                    <div class="course-box"><strong>CS IOT</strong><p>IoT sensors, embedded systems, and Python.</p><p><b>Credits:</b> 18</p></div>
+                    <div class="course-box"><strong>CS IT</strong><p>Networking, cloud computing, and databases.</p><p><b>Credits:</b> 20</p></div>
+                    <div class="course-box"><strong>CS DS</strong><p>Big data analytics and machine learning.</p><p><b>Credits:</b> 22</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research Areas</h2>
+        <div class="icon-grid">
+          
+            <div class="icon-card"><span>🤖</span><p>Artificial Intelligence</p></div>
+            <div class="icon-card"><span>💻</span><p>Computer Science</p></div>
+            <div class="icon-card"><span>🔋</span><p>Internet of Things</p></div>
+            <div class="icon-card"><span>📊</span><p>Information Technology</p></div>
+            <div class="icon-card"><span>🖥️</span><p>Data Structure</p></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Christ University. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
