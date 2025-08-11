@@ -1,1 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background: #eef6fa;
+    color: #24292e;
+}
+header {
+    background: #0180cb;
+    color: #fff;
+    padding: 1em 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.2s;
+}
+.nav-link:hover {
+    color: #f6db76;
+}
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 40px rgba(0, 128, 203, 0.07);
+}
+h1, h2, h3 {
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #0180cb;
+    margin-bottom: 0.6em;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.09);
+}
+.featured-posts article {
+    margin-bottom: 1.5em;
+    border-left: 4px solid #f6db76;
+    padding-left: 1em;
+}
+.attractions-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2em;
+}
+.attractions-list figure img {
+    width: 100%;
+    border-radius: 8px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 2em;
+}
+.gallery-grid figure {
+    overflow: hidden;
+    border-radius: 8px;
+    background: #eaf2fe;
+    box-shadow: 0 1px 8px rgba(0,128,203,0.07);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.gallery-grid figure:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,128,203,0.15);
+}
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 2em;
+}
+input, textarea, button {
+    padding: 0.6em;
+    border-radius: 5px;
+    border: 1px solid #b8d0ec;
+    font-family: inherit;
+    font-size: 1em;
+}
+button {
+    background: #0180cb;
+    color: #fff;
+    border: none;
+    transition: background 0.2s;
+    cursor: pointer;
+}
+button:hover {
+    background: #025ba0;
+}
+footer {
+    margin: 2em 0 0 0;
+    text-align: center;
+    color: #7c8795;
+    font-size: 1em;
+}
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+    main {
+        padding: 0.4em;
+    }
+    .gallery-grid,
+    .attractions-list {
+        grid-template-columns: 1fr;
+        gap: 1em;
+    }
+}
+</style>
+</head>
+<body>
 
